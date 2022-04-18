@@ -19,4 +19,6 @@ app.listen(env.PORT, (err) => {
     else if (err) console.log('App is not running.');
 });
 
+require('./configs/database')
+
 app.use('/', router);
